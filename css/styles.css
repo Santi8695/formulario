@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+form {
+    margin: auto;
+    width: fit-content;
+    max-width: 420px;
+    background: #F3F3F3;
+}
+
+legend {
+    background-color: #6110e8;
+    color: white;
+    padding: 24px;
+    font-size: 1.5rem;
+}
+
+.elemento {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    margin-top: 20px;
+}
+
+label {
+    margin: auto;
+}
+
+input {
+    letter-spacing: .5px;
+    height: 56px;
+    padding: 16px;
+    background: #FFFFFF;
+    flex-basis: 74%;
+    border-radius: 4px;
+    border: 1px solid grey;
+    margin: 5px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 20px;
+}
+
+.elementoTel {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    margin-top: 20px;
+}
+
+.prefijo {
+    margin: 5px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.telefonoInput {
+    max-width: 250px;
+}
+
+.area {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    margin-top: 20px;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    flex-basis: 100%;
+    resize: vertical;
+    padding: 16px;
+    margin: 5px;
+    grid-column: 2;
+    margin-right: 20px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #6110e8;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    margin: 4px 4px 12px 4px;
+    padding: 0 24px;
+}
+
+input:focus, .prefijo:focus, textarea:focus {
+    background-color: #6310e821;
+}
+
+input:invalid {
+    border: 2px solid rgb(255, 0, 0);
+}
+
+input:valid {
+    border: 2px solid rgb(78, 154, 240);
+}
+
+input:hover, .prefijo:hover, textarea:hover {
+    border: solid 2px rgb(0, 0, 0);
+}
+
+input:placeholder-shown {
+    border: 1px solid gray;
+}
+
+input:placeholder-shown:hover {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
